@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background: #efeff2; 
+}
+.screen{
+    height: 100px;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    text-align: right;
+    pointer-events: none;
+}
+
+#calculator{
+    height: 550px;
+    width: 300px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    overflow: hidden;
+    background: #22252D;
+}
+
+.calculator-heading{
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.functions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.btns{
+    flex: 0 0 22%;
+    margin: 5% 0;
+    width: 60px;
+    height: 52px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.null-btn{
+    pointer-events: none;
+    background:#22252D;
+    border: none;
+}
+
+.btn-function{
+    background-color: rgb(181, 159, 37);
+    color: white;
+    font-size: 30px;
+}
+
+.btn-equal{
+    background-color: green;
+    color: white;
+    font-size: 30px;
+}
+.btn-clear{
+    background-color: red;
+    color: white;
+    font-size: 25px;
+}
+
+.screen::placeholder{
+    color: white;
+}
